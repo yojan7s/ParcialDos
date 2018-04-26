@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerView = (RecyclerView) findViewById(R.id.id_rcv_food);
-        fab = (FloatingActionButton) findViewById(R.id.fab_ir_game);
+        fab = (FloatingActionButton) findViewById(R.id.fabGoToGame);
 
         // Establcer la orientacion de RecyclerView
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);

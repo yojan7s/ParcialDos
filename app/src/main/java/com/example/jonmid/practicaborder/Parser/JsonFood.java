@@ -15,6 +15,7 @@ public class JsonFood {
 
 
             JSONObject jsonData = new JSONObject(content);
+
             JSONArray jsonArray = jsonData.getJSONArray("results");
 
             List<Food> postList = new ArrayList<>();
@@ -26,6 +27,7 @@ public class JsonFood {
                 Food food = new Food();
                 food.setTitle(item.getString("title"));
                 postList.add(food);
+
             }
 
             return postList;
